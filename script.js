@@ -91,13 +91,10 @@ for (let i = 0; i < btnView.length; i++) {
 
 // Fonctionnalité 7 :
 
-function reverseCard() {
-    let greyBtn = document.querySelectorAll("main a")[1];
+let greyBtn = document.querySelectorAll("main a")[1];
 
-    greyBtn.addEventListener("click", function() {
+greyBtn.addEventListener("click", function() {
     let cards = document.querySelector('main .row');
-        cards.insertBefore(cards.lastElementChild, cards.firstElementChild);
-    });
-};
-  
-reverseCard();
+    cards.insertBefore(cards.lastElementChild, cards.firstElementChild);
+});
+
